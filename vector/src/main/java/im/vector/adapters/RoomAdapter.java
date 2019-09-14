@@ -81,7 +81,7 @@ public class RoomAdapter extends AbsAdapter {
         mPublicRoomsSection.setEmptyViewPlaceholder(context.getString(R.string.no_public_room_placeholder), context.getString(R.string.no_result_placeholder));
 
         addSection(mRoomsSection);
-        addSection(mPublicRoomsSection);
+//        addSection(mPublicRoomsSection);
     }
 
     /*

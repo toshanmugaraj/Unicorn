@@ -2234,36 +2234,36 @@ public class LoginActivity extends MXCActionBarActivity implements RegistrationM
         mSubmitThreePidButton.setVisibility(View.GONE);
         mSkipThreePidButton.setVisibility(View.GONE);
 
-        mHomeServerOptionLayout.setVisibility(View.VISIBLE);
+        mHomeServerOptionLayout.setVisibility(View.GONE);
 
         // Then show them depending on mode
         switch (mMode) {
             case MODE_LOGIN:
                 mLoginLayout.setVisibility(View.VISIBLE);
-                mPasswordForgottenTxtView.setVisibility(View.VISIBLE);
+                mPasswordForgottenTxtView.setVisibility(View.GONE);
                 mLoginButton.setVisibility(View.VISIBLE);
-                mSwitchToRegisterButton.setVisibility(View.VISIBLE);
+                mSwitchToRegisterButton.setVisibility(View.GONE);
                 break;
             case MODE_LOGIN_SSO:
-                mLoginSsoButton.setVisibility(View.VISIBLE);
+                mLoginSsoButton.setVisibility(View.GONE);
                 break;
             case MODE_ACCOUNT_CREATION:
-                mCreationLayout.setVisibility(View.VISIBLE);
-                mRegisterButton.setVisibility(View.VISIBLE);
-                mSwitchToLoginButton.setVisibility(View.VISIBLE);
+                mCreationLayout.setVisibility(View.GONE);
+                mRegisterButton.setVisibility(View.GONE);
+                mSwitchToLoginButton.setVisibility(View.GONE);
                 break;
             case MODE_FORGOT_PASSWORD:
-                mForgetPasswordLayout.setVisibility(View.VISIBLE);
-                mForgotPasswordButton.setVisibility(View.VISIBLE);
+                mForgetPasswordLayout.setVisibility(View.GONE);
+                mForgotPasswordButton.setVisibility(View.GONE);
                 break;
             case MODE_FORGOT_PASSWORD_WAITING_VALIDATION:
-                mForgotValidateEmailButton.setVisibility(View.VISIBLE);
+                mForgotValidateEmailButton.setVisibility(View.GONE);
                 break;
             case MODE_ACCOUNT_CREATION_THREE_PID:
-                mThreePidLayout.setVisibility(View.VISIBLE);
-                mSubmitThreePidButton.setVisibility(View.VISIBLE);
+                mThreePidLayout.setVisibility(View.GONE);
+                mSubmitThreePidButton.setVisibility(View.GONE);
                 if (mRegistrationManager.canSkipThreePid()) {
-                    mSkipThreePidButton.setVisibility(View.VISIBLE);
+                    mSkipThreePidButton.setVisibility(View.GONE);
                 }
                 mHomeServerOptionLayout.setVisibility(View.GONE);
                 break;

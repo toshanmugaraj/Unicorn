@@ -21,7 +21,7 @@
 
     <!-- titles -->
     <string name="title_activity_home">Messages</string>
-    <string name="title_activity_room">Room</string>
+    <string name="title_activity_room">Group</string>
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_member_details">Member Details</string>
     <string name="title_activity_historical">Historical</string>
@@ -81,10 +81,10 @@
     <string name="cannot_start_call">Cannot start the call, please try later</string>
     <string name="missing_permissions_warning">"Due to missing permissions, some features may be missing…</string>
     <string name="missing_permissions_error">"Due to missing permissions, this action is not possible.</string>
-    <string name="missing_permissions_to_start_conf_call">You need permission to invite to start a conference in this room</string>
+    <string name="missing_permissions_to_start_conf_call">You need permission to invite to start a conference in this group</string>
     <string name="missing_permissions_title_to_start_conf_call">Cannot start call</string>
     <string name="device_information">Device information</string>
-    <string name="room_no_conference_call_in_encrypted_rooms">Conference calls are not supported in encrypted rooms</string>
+    <string name="room_no_conference_call_in_encrypted_rooms">Conference calls are not supported in encrypted groups</string>
     <string name="call_anyway">Call Anyway</string>
     <string name="send_anyway">Send Anyway</string>
     <string name="or">or</string>
@@ -124,14 +124,14 @@
     <string name="bottom_action_home">Home</string>
     <string name="bottom_action_favourites">Favourites</string>
     <string name="bottom_action_people">People</string>
-    <string name="bottom_action_rooms">Rooms</string>
+    <string name="bottom_action_rooms">Groups</string>
     <string name="bottom_action_groups">Communities</string>
 
     <!-- Home screen -->
-    <string name="home_filter_placeholder_home">Filter room names</string>
+    <string name="home_filter_placeholder_home">Filter group names</string>
     <string name="home_filter_placeholder_favorites">Filter favourites</string>
     <string name="home_filter_placeholder_people">Filter people</string>
-    <string name="home_filter_placeholder_rooms">Filter room names</string>
+    <string name="home_filter_placeholder_rooms">Filter group names</string>
     <string name="home_filter_placeholder_groups">Filter community names</string>
 
     <!-- Home fragment -->
@@ -140,19 +140,19 @@
     <string name="system_alerts_header">"System Alerts"</string>
 
     <!-- People fragment -->
-    <string name="direct_chats_header">Conversations</string>
+    <string name="direct_chats_header">Chat</string>
     <string name="local_address_book_header">Local address book</string>
     <string name="user_directory_header">User directory</string>
     <string name="matrix_only_filter">Matrix contacts only</string>
-    <string name="no_conversation_placeholder">No conversations</string>
+    <string name="no_conversation_placeholder">No chat</string>
     <string name="no_contact_access_placeholder">You didn’t allow Riot to access your local contacts</string>
     <string name="no_result_placeholder">No results</string>
 
     <!-- Rooms fragment -->
-    <string name="rooms_header">Rooms</string>
-    <string name="rooms_directory_header">Room directory</string>
-    <string name="no_room_placeholder">No rooms</string>
-    <string name="no_public_room_placeholder">No public rooms available</string>
+    <string name="rooms_header">Groups</string>
+    <string name="rooms_directory_header">Group directory</string>
+    <string name="no_room_placeholder">No groups</string>
+    <string name="no_public_room_placeholder">No public groups available</string>
     <plurals name="public_room_nb_users">
         <item quantity="one">1 user</item>
         <item quantity="other">%d users</item>
@@ -182,7 +182,7 @@
     <string name="send_files_in">Send into</string>
     <string name="read_receipt">Read</string>
 
-    <string name="join_room">Join Room</string>
+    <string name="join_room">Join Group</string>
     <string name="username">Username</string>
     <string name="create_account">Create Account</string>
     <string name="login">Log in</string>
@@ -329,8 +329,8 @@
     <string name="today">Today</string>
 
     <!-- room info dialog Screen -->
-    <string name="room_info_room_name">Room name</string>
-    <string name="room_info_room_topic">Room topic</string>
+    <string name="room_info_room_name">Group name</string>
+    <string name="room_info_room_topic">Group topic</string>
 
     <!-- Call settings screen -->
     <string name="settings_call_category">Calls</string>
@@ -392,11 +392,11 @@
     <string name="room_jump_to_first_unread">Jump to first unread message.</string>
 
     <!-- Room Preview -->
-    <string name="room_preview_invitation_format">You have been invited to join this room by %s</string>
+    <string name="room_preview_invitation_format">You have been invited to join this group by %s</string>
     <string name="room_preview_unlinked_email_warning">This invitation was sent to %s, which is not associated with this account.\nYou may wish to login with a different account, or add this email to your account.</string>
     <string name="room_preview_try_join_an_unknown_room">You are trying to access %s. Would you like to join in order to participate in the discussion?</string>
-    <string name="room_preview_try_join_an_unknown_room_default">a room</string>
-    <string name="room_preview_room_interactions_disabled">This is a preview of this room. Room interactions have been disabled.</string>
+    <string name="room_preview_try_join_an_unknown_room_default">a group</string>
+    <string name="room_preview_room_interactions_disabled">This is a preview of this group. Group interactions have been disabled.</string>
 
     <!-- Chat creation -->
     <string name="room_creation_title">New Chat</string>
@@ -430,8 +430,8 @@
     </plurals>
 
     <!--  Chat participants -->
-    <string name="room_participants_leave_prompt_title">Leave room</string>
-    <string name="room_participants_leave_prompt_msg">Are you sure you want to leave the room?</string>
+    <string name="room_participants_leave_prompt_title">Leave group</string>
+    <string name="room_participants_leave_prompt_msg">Are you sure you want to leave the group?</string>
     <string name="room_participants_remove_prompt_msg">Are you sure you want to remove %s from this chat?</string>
     <string name="room_participants_create">Create</string>
 
@@ -452,8 +452,8 @@
     <string name="room_participants_header_devices">DEVICES</string>
 
     <string name="room_participants_action_invite">Invite</string>
-    <string name="room_participants_action_leave">Leave this room</string>
-    <string name="room_participants_action_remove">Remove from this room</string>
+    <string name="room_participants_action_leave">Leave this group</string>
+    <string name="room_participants_action_remove">Remove from this group</string>
     <string name="room_participants_action_ban">Ban</string>
     <string name="room_participants_action_unban">Unban</string>
     <string name="room_participants_action_kick">Kick</string>
@@ -494,8 +494,8 @@
     <string name="people_search_filter_text">Matrix users only</string>
 
     <string name="people_search_invite_by_id_dialog_title">Invite user by ID</string>
-    <string name="people_search_invite_by_id_dialog_description">Please enter one or more email address or Matrix ID</string>
-    <string name="people_search_invite_by_id_dialog_hint">Email or Matrix ID</string>
+    <string name="people_search_invite_by_id_dialog_description">Please enter ID</string>
+    <string name="people_search_invite_by_id_dialog_hint">Email or ID</string>
 
     <!--  Chat -->
     <string name="room_menu_search">Search</string>
@@ -514,7 +514,7 @@
     <string name="room_resend_unsent_messages">Resend unsent messages</string>
     <string name="room_delete_unsent_messages">Delete unsent messages</string>
     <string name="room_message_file_not_found">File not found</string>
-    <string name="room_do_not_have_permission_to_post">You do not have permission to post to this room</string>
+    <string name="room_do_not_have_permission_to_post">You do not have permission to post to this group</string>
     <plurals name="room_new_messages_notification">
         <item quantity="one">1 new message</item>
         <item quantity="other">%d new messages</item>
@@ -534,7 +534,7 @@
     <string name="ssl_only_accept">Only accept the certificate if the server administrator has published a fingerprint that matches the one above.</string>
 
     <!-- Room Details -->
-    <string name="room_details_title">Room Details</string>
+    <string name="room_details_title">Group Details</string>
     <string name="room_details_people">People</string>
     <string name="room_details_files">Files</string>
     <string name="room_details_settings">Settings</string>
@@ -554,9 +554,9 @@
 
     <!-- Search -->
     <string name="search_hint">Search</string>
-    <string name="search_members_hint">Filter room members</string>
+    <string name="search_members_hint">Filter group members</string>
     <string name="search_no_results">No results</string>
-    <string name="tab_title_search_rooms">ROOMS</string>
+    <string name="tab_title_search_rooms">GROUPS</string>
     <string name="tab_title_search_messages">MESSAGES</string>
     <string name="tab_title_search_people">PEOPLE</string>
     <string name="tab_title_search_files">FILES</string>
@@ -565,24 +565,24 @@
     <string name="room_recents_join">JOIN</string>
     <string name="room_recents_directory">DIRECTORY</string>
     <string name="room_recents_favourites">FAVORITES</string>
-    <string name="room_recents_conversations">ROOMS</string>
+    <string name="room_recents_conversations">GROUPS</string>
     <string name="room_recents_low_priority">LOW PRIORITY</string>
     <string name="room_recents_invites">INVITES</string>
     <string name="room_recents_start_chat">Start chat</string>
-    <string name="room_recents_create_room">Create room</string>
-    <string name="room_recents_join_room">Join room</string>
-    <string name="room_recents_join_room_title">Join a room</string>
-    <string name="room_recents_join_room_prompt">Type a room id or a room alias</string>
+    <string name="room_recents_create_room">Create group</string>
+    <string name="room_recents_join_room">Join group</string>
+    <string name="room_recents_join_room_title">Join a group</string>
+    <string name="room_recents_join_room_prompt">Type a group id or a group alias</string>
 
     <!-- Directory -->
     <string name="directory_search_results_title">Browse directory</string>
     <plurals name="directory_search_rooms">
-        <item quantity="one">1 room</item>
-        <item quantity="other">%d rooms</item>
+        <item quantity="one">1 group</item>
+        <item quantity="other">%d groups</item>
     </plurals>
     <plurals name="directory_search_rooms_for">
-        <item quantity="one">%1$s room found for %2$s</item>
-        <item quantity="other">%1$s rooms found for %2$s</item>
+        <item quantity="one">%1$s group found for %2$s</item>
+        <item quantity="other">%1$s groups found for %2$s</item>
     </plurals>
     <string name="directory_searching_title">Searching directory…</string>
 
@@ -719,7 +719,7 @@
     <string name="settings_containing_my_user_name">Msgs containing my user name</string>
     <string name="settings_messages_in_one_to_one">Msgs in one-to-one chats</string>
     <string name="settings_messages_in_group_chat">Msgs in group chats</string>
-    <string name="settings_invited_to_room">When I’m invited to a room</string>
+    <string name="settings_invited_to_room">When I’m invited to a group</string>
     <string name="settings_call_invitations">Call invitations</string>
     <string name="settings_messages_sent_by_bot">Messages sent by bot</string>
 
@@ -753,8 +753,8 @@
     <string name="settings_contacts_app_permission">Contacts permission</string>
     <string name="settings_contacts_phonebook_country">Phonebook country</string>
     <string name="settings_home_display">Home display</string>
-    <string name="settings_pin_missed_notifications">Pin rooms with missed notifications</string>
-    <string name="settings_pin_unread_messages">Pin rooms with unread messages</string>
+    <string name="settings_pin_missed_notifications">Pin groups with missed notifications</string>
+    <string name="settings_pin_unread_messages">Pin groups with unread messages</string>
     <string name="settings_devices_list">Devices</string>
     <string name="settings_inline_url_preview">Inline URL preview</string>
     <string name="settings_inline_url_preview_summary">Preview links within the chat when your homeserver supports this feature.</string>
@@ -876,10 +876,10 @@
     <!-- Room Settings -->
 
     <!-- room global settings-->
-    <string name="room_settings_room_photo">Room Photo</string>
-    <string name="room_settings_room_name">Room Name</string>
+    <string name="room_settings_room_photo">Group Photo</string>
+    <string name="room_settings_room_name">Group Name</string>
     <string name="room_settings_topic">Topic</string>
-    <string name="room_settings_room_tag">Room Tag</string>
+    <string name="room_settings_room_tag">Group Tag</string>
     <string name="room_settings_tag_pref_dialog_title">Tagged as:</string>
 
     <!-- Room settings: Room tag -->
@@ -889,12 +889,12 @@
 
     <!-- room settings : access and visibility -->
     <string name="room_settings_category_access_visibility_title">Access and visibility</string>
-    <string name="room_settings_directory_visibility">List this room in room directory</string>
+    <string name="room_settings_directory_visibility">List this group in group directory</string>
     <string name="room_settings_room_notifications_title">Notifications</string>
-    <string name="room_settings_room_access_rules_pref_title">Room Access</string>
-    <string name="room_settings_room_read_history_rules_pref_title">Room History Readability</string>
+    <string name="room_settings_room_access_rules_pref_title">Group Access</string>
+    <string name="room_settings_room_read_history_rules_pref_title">Group History Readability</string>
     <string name="room_settings_room_read_history_rules_pref_dialog_title">Who can read history?</string>
-    <string name="room_settings_room_access_rules_pref_dialog_title">Who can access this room?</string>
+    <string name="room_settings_room_access_rules_pref_dialog_title">Who can access this group?</string>
 
     <!-- Room settings, access and visibility : WHO CAN READ HISTORY? (read rule) -->
     <string name="room_settings_read_history_entry_anyone">Anyone</string>
@@ -903,17 +903,17 @@
     <string name="room_settings_read_history_entry_members_only_joined">Members only (since they joined)</string>
 
     <!-- Room settings: "Who can access this room?" (access rule) -->
-    <string name="room_settings_room_access_warning">To link to a room it must have an address.</string>
+    <string name="room_settings_room_access_warning">To link to a group it must have an address.</string>
     <string name="room_settings_room_access_entry_only_invited">Only people who have been invited</string>
-    <string name="room_settings_room_access_entry_anyone_with_link_apart_guest">Anyone who knows the room’s link, apart from guests</string>
-    <string name="room_settings_room_access_entry_anyone_with_link_including_guest">Anyone who knows the room’s link, including guests</string>
+    <string name="room_settings_room_access_entry_anyone_with_link_apart_guest">Anyone who knows the group’s link, apart from guests</string>
+    <string name="room_settings_room_access_entry_anyone_with_link_including_guest">Anyone who knows the group’s link, including guests</string>
 
     <!-- Room settings: banned users -->
     <string name="room_settings_banned_users_title">Banned users</string>
 
     <!-- advanced -->
     <string name="room_settings_category_advanced_title">Advanced</string>
-    <string name="room_settings_room_internal_id">This room’s internal ID</string>
+    <string name="room_settings_room_internal_id">This group’s internal ID</string>
     <string name="room_settings_addresses_pref_title">Addresses</string>
     <string name="room_settings_labs_pref_title">Labs</string>
     <string name="room_settings_labs_warning_message">These are experimental features that may break in unexpected ways. Use with caution.</string>
@@ -921,13 +921,13 @@
     <string name="room_settings_labs_end_to_end_is_active">End-to-End Encryption is active</string>
     <string name="room_settings_labs_end_to_end_warnings">You need to logout to be able to enable the encryption.</string>
     <string name="room_settings_never_send_to_unverified_devices_title">Encrypt to verified devices only</string>
-    <string name="room_settings_never_send_to_unverified_devices_summary">Never send encrypted messages to unverified devices in this room from this device.</string>
+    <string name="room_settings_never_send_to_unverified_devices_summary">Never send encrypted messages to unverified devices in this group from this device.</string>
 
     <!-- Room settings: advanced addresses -->
-    <string name="room_settings_addresses_no_local_addresses">This room has no local addresses</string>
+    <string name="room_settings_addresses_no_local_addresses">This group has no local addresses</string>
     <string name="room_settings_addresses_add_new_address">New address (e.g #foo:matrix.org")</string>
 
-    <string name="room_settings_no_flair">This room is not showing flair for any communities</string>
+    <string name="room_settings_no_flair">This group is not showing flair for any communities</string>
     <string name="room_settings_add_new_group">New community ID (e.g +foo:matrix.org")</string>
     <string name="room_settings_invalid_group_format_dialog_title">Invalid community ID</string>
     <string name="room_settings_invalid_group_format_dialog_body">\'%s\' is not a valid community ID</string>
@@ -935,16 +935,16 @@
 
     <string name="room_settings_addresses_invalid_format_dialog_title">Invalid alias format</string>
     <string name="room_settings_addresses_invalid_format_dialog_body">\'%s\' is not a valid format for an alias</string>
-    <string name="room_settings_addresses_disable_main_address_prompt_msg">You will have no main address specified for this room."</string>
+    <string name="room_settings_addresses_disable_main_address_prompt_msg">You will have no main address specified for this group."</string>
     <string name="room_settings_addresses_disable_main_address_prompt_title">Main address warnings</string>
 
     <string name="room_settings_set_main_address">Set as Main Address</string>
     <string name="room_settings_unset_main_address">Unset as Main Address</string>
-    <string name="room_settings_copy_room_id">Copy Room ID</string>
-    <string name="room_settings_copy_room_address">Copy Room Address</string>
+    <string name="room_settings_copy_room_id">Copy Group ID</string>
+    <string name="room_settings_copy_room_address">Copy Group Address</string>
 
-    <string name="room_settings_addresses_e2e_enabled">Encryption is enabled in this room.</string>
-    <string name="room_settings_addresses_e2e_disabled">Encryption is disabled in this room.</string>
+    <string name="room_settings_addresses_e2e_enabled">Encryption is enabled in this group.</string>
+    <string name="room_settings_addresses_e2e_disabled">Encryption is disabled in this group.</string>
     <string name="room_settings_addresses_e2e_encryption_warning">Enable encryption \n(warning: cannot be disabled again!)</string>
 
     <!-- Directory -->
@@ -952,7 +952,7 @@
     <string name="settings_theme">Theme</string>
 
     <!-- matrix error -->
-    <string name="failed_to_load_timeline_position">%s was trying to load a specific point in this room’s timeline but was unable to find it.</string>
+    <string name="failed_to_load_timeline_position">%s was trying to load a specific point in this group’s timeline but was unable to find it.</string>
 
     <!-- encryption dialog -->
     <string name="encryption_information_title">End-to-end encryption information</string>
@@ -973,18 +973,18 @@
     <string name="encryption_information_verification">Verification</string>
     <string name="encryption_information_ed25519_fingerprint">Ed25519 fingerprint</string>
 
-    <string name="encryption_export_e2e_room_keys">Export E2E room keys</string>
-    <string name="encryption_export_room_keys">Export room keys</string>
+    <string name="encryption_export_e2e_room_keys">Export E2E group keys</string>
+    <string name="encryption_export_room_keys">Export group keys</string>
     <string name="encryption_export_room_keys_summary">Export the keys to a local file</string>
     <string name="encryption_export_export">Export</string>
     <string name="encryption_export_notice">Please create a passphrase to encrypt the exported keys. You will need to enter the same passphrase to be able to import the keys.</string>
-    <string name="encryption_export_saved_as">The E2E room keys have been saved to \'%s\'.\n\nWarning: this file may be deleted if the application is uninstalled.</string>
+    <string name="encryption_export_saved_as">The E2E group keys have been saved to \'%s\'.\n\nWarning: this file may be deleted if the application is uninstalled.</string>
 
     <string name="encryption_message_recovery">Encrypted Messages Recovery</string>
     <string name="encryption_settings_manage_message_recovery_summary">Manage Key Backup</string>
 
-    <string name="encryption_import_e2e_room_keys">Import E2E room keys</string>
-    <string name="encryption_import_room_keys">Import room keys</string>
+    <string name="encryption_import_e2e_room_keys">Import E2E group keys</string>
+    <string name="encryption_import_room_keys">Import group keys</string>
     <string name="encryption_import_room_keys_summary">Import the keys from a local file</string>
     <string name="encryption_import_import">Import</string>
     <string name="encryption_never_send_to_unverified_devices_title">Encrypt to verified devices only</string>
@@ -1012,16 +1012,16 @@
     <string name="e2e_enabling_on_app_update">Riot now supports end-to-end encryption but you need to log in again to enable it.\n\nYou can do it now or later from the application settings.</string>
 
     <!-- unknown devices management -->
-    <string name="unknown_devices_alert_title">Room contains unknown devices</string>
-    <string name="unknown_devices_alert_message">This room contains unknown devices which have not been verified.\nThis means there is no guarantee that the devices belong to the users they claim to.\nWe recommend you go through the verification process for each device before continuing, but you can resend the message without verifying if you prefer.\n\nUnknown devices:</string>
+    <string name="unknown_devices_alert_title">Group contains unknown devices</string>
+    <string name="unknown_devices_alert_message">This group contains unknown devices which have not been verified.\nThis means there is no guarantee that the devices belong to the users they claim to.\nWe recommend you go through the verification process for each device before continuing, but you can resend the message without verifying if you prefer.\n\nUnknown devices:</string>
 
     <!-- directory activity  -->
-    <string name="select_room_directory">Select a room directory</string>
+    <string name="select_room_directory">Select a group directory</string>
     <string name="directory_server_fail_to_retrieve_server">The server may be unavailable or overloaded</string>
-    <string name="directory_server_type_homeserver">Type a homeserver to list public rooms from</string>
+    <string name="directory_server_type_homeserver">Type a homeserver to list public groups from</string>
     <string name="directory_server_placeholder">Homeserver URL</string>
-    <string name="directory_server_all_rooms_on_server">All rooms on %s server</string>
-    <string name="directory_server_native_rooms">All native %s rooms</string>
+    <string name="directory_server_all_rooms_on_server">All groups on %s server</string>
+    <string name="directory_server_native_rooms">All native %s groups</string>
 
     <!-- Lock screen-->
     <string name="lock_screen_hint">Type here…</string>
@@ -1036,8 +1036,8 @@
         <item quantity="other">%d unread notified messages</item>
     </plurals>
     <plurals name="notification_unread_notified_messages_in_room_rooms">
-        <item quantity="one">1 room</item>
-        <item quantity="other">%d rooms</item>
+        <item quantity="one">1 group</item>
+        <item quantity="other">%d groups</item>
     </plurals>
 
     <plurals name="notification_compat_summary_line_for_room">
@@ -1051,11 +1051,11 @@
 
     <string name="notification_unread_notified_messages_in_room">%1$s in %2$s"</string>
     <string name="notification_unknown_new_event">New Event</string>
-    <string name="notification_unknown_room_name">Room</string>
+    <string name="notification_unknown_room_name">Group</string>
     <string name="notification_new_messages">New Messages</string>
     <string name="notification_new_invitation">New Invitation</string>
     <string name="notification_sender_me">Me</string>
-    <string name="notification_inline_reply_failed">** Failed to send - please open room</string>
+    <string name="notification_inline_reply_failed">** Failed to send - please open group</string>
 
     <!-- historical -->
     <string name="historical_placeholder">Search for historical</string>
@@ -1071,12 +1071,12 @@
     <string name="huge">Huge</string>
 
     <!-- Widget-->
-    <string name="widget_no_power_to_manage">You need permission to manage widgets in this room</string>
+    <string name="widget_no_power_to_manage">You need permission to manage widgets in this group</string>
     <string name="widget_creation_failure">Widget creation has failed</string>
     <string name="event_formatter_widget_added">%1$s added by %2$s</string>
     <string name="event_formatter_widget_removed">%1$s removed by %2$s</string>
     <string name="settings_labs_create_conference_with_jitsi">Create conference calls with jitsi</string>
-    <string name="widget_delete_message_confirmation">Are you sure you want to delete the widget from this room?</string>
+    <string name="widget_delete_message_confirmation">Are you sure you want to delete the widget from this group?</string>
     <plurals name="active_widgets">
         <item quantity="one">1 active widget</item>
         <item quantity="other">%d active widgets</item>
@@ -1088,11 +1088,11 @@
     <string name="widget_integration_unable_to_create">Unable to create widget.</string>
     <string name="widget_integration_failed_to_send_request">Failed to send request.</string>
     <string name="widget_integration_positive_power_level">Power level must be positive integer.</string>
-    <string name="widget_integration_must_be_in_room">You are not in this room.</string>
-    <string name="widget_integration_no_permission_in_room">You do not have permission to do that in this room.</string>
-    <string name="widget_integration_missing_room_id">Missing room_id in request.</string>
+    <string name="widget_integration_must_be_in_room">You are not in this group.</string>
+    <string name="widget_integration_no_permission_in_room">You do not have permission to do that in this group.</string>
+    <string name="widget_integration_missing_room_id">Missing group_id in request.</string>
     <string name="widget_integration_missing_user_id">Missing user_id in request.</string>
-    <string name="widget_integration_room_not_visible">Room %s is not visible.</string>
+    <string name="widget_integration_room_not_visible">Group %s is not visible.</string>
     <string name="widget_integration_missing_parameter">A required parameter is missing.</string>
     <string name="widget_integration_invalid_parameter">A parameter is not valid.</string>
     <string name="integration_manager_not_configured">No integration manager configured.</string>
@@ -1134,10 +1134,10 @@
     <string name="command_description_unban_user">Unbans user with given id</string>
     <string name="command_description_op_user">Define the power level of a user</string>
     <string name="command_description_deop_user">Deops user with given id</string>
-    <string name="command_description_invite_user">Invites user with given id to current room</string>
-    <string name="command_description_join_room">Joins room with given alias</string>
-    <string name="command_description_part_room">Leave room</string>
-    <string name="command_description_topic">Set the room topic</string>
+    <string name="command_description_invite_user">Invites user with given id to current group</string>
+    <string name="command_description_join_room">Joins group with given alias</string>
+    <string name="command_description_part_room">Leave group</string>
+    <string name="command_description_topic">Set the group topic</string>
     <string name="command_description_kick_user">Kicks user with given id</string>
     <string name="command_description_nick">Changes your display nickname</string>
     <string name="command_description_markdown">On/Off markdown</string>
@@ -1164,14 +1164,14 @@
     <!-- group details -->
     <string name="group_details_home">Home</string>
     <string name="group_details_people">People</string>
-    <string name="group_details_rooms">Rooms</string>
+    <string name="group_details_rooms">Groups</string>
     <string name="no_users_placeholder">No users</string>
 
-    <string name="rooms">Rooms</string>
+    <string name="rooms">Groups</string>
     <string name="joined">Joined</string>
     <string name="invited">Invited</string>
     <string name="filter_group_members">Filter group members</string>
-    <string name="filter_group_rooms">Filter group rooms</string>
+    <string name="filter_group_rooms">Filter group groups</string>
 
     <plurals name="group_members">
         <item quantity="one">1 member</item>
@@ -1179,8 +1179,8 @@
     </plurals>
 
     <plurals name="group_rooms">
-        <item quantity="one">1 room</item>
-        <item quantity="other">%d rooms</item>
+        <item quantity="one">1 group</item>
+        <item quantity="other">%d groups</item>
     </plurals>
     <string name="group_no_long_description">The community admin has not provided a long description for this community.</string>
 
@@ -1188,7 +1188,7 @@
     <string name="has_been_banned">You have been banned from %1$s by %2$s</string>
     <string name="reason_colon">Reason: %1$s</string>
     <string name="rejoin">Rejoin</string>
-    <string name="forget_room">Forget room</string>
+    <string name="forget_room">Forget group</string>
 
     <!-- Miscellaneous image descriptions for accessibility -->
     <string name="receipt_avatar">Receipt avatar</string>
@@ -1201,16 +1201,16 @@
 
     <!-- Deactivate account screen -->
     <string name="deactivate_account_title">Deactivate Account</string>
-    <string name="deactivate_account_content">This will make your account permanently unusable. You will not be able to log in, and no one will be able to re-register the same user ID. This will cause your account to leave all rooms it is participating in, and it will remove your account details from your identity server. <b>This action is irreversible</b>.\n\nDeactivating your account <b>does not by default cause us to forget messages you have sent</b>. If you would like us to forget your messages, please tick the box below.\n\nMessage visibility in Matrix is similar to email. Our forgetting your messages means that messages you have sent will not be shared with any new or unregistered users, but registered users who already have access to these messages will still have access to their copy.</string>
+    <string name="deactivate_account_content">This will make your account permanently unusable. You will not be able to log in, and no one will be able to re-register the same user ID. This will cause your account to leave all groups it is participating in, and it will remove your account details from your identity server. <b>This action is irreversible</b>.\n\nDeactivating your account <b>does not by default cause us to forget messages you have sent</b>. If you would like us to forget your messages, please tick the box below.\n\nMessage visibility in Matrix is similar to email. Our forgetting your messages means that messages you have sent will not be shared with any new or unregistered users, but registered users who already have access to these messages will still have access to their copy.</string>
     <string name="deactivate_account_delete_checkbox">Please forget all messages I have sent when my account is deactivated (Warning: this will cause future users to see an incomplete view of conversations)</string>
     <string name="deactivate_account_prompt_password">To continue, please enter your password:</string>
     <string name="deactivate_account_submit">Deactivate Account</string>
 
     <string name="error_empty_field_enter_user_name">Please enter a username.</string>
     <string name="error_empty_field_your_password">Please enter your password.</string>
-    <string name="room_tombstone_versioned_description">This room has been replaced and is no longer active</string>
+    <string name="room_tombstone_versioned_description">This group has been replaced and is no longer active</string>
     <string name="room_tombstone_continuation_link">The conversation continues here</string>
-    <string name="room_tombstone_continuation_description">This room is a continuation of another conversation</string>
+    <string name="room_tombstone_continuation_description">This group is a continuation of another conversation</string>
     <string name="room_tombstone_predecessor_link">Click here to see older messages</string>
 
     <!-- Resource limit-->
@@ -1232,9 +1232,9 @@
     <string name="resource_limit_hard_contact">"Please %s to continue using this service."</string>
 
     <!-- Lazy loading -->
-    <string name="settings_lazy_loading_title">Lazy load rooms members</string>
-    <string name="settings_lazy_loading_description">Increase performance by only loading room members on first view.</string>
-    <string name="error_lazy_loading_not_supported_by_home_server">Your homeserver does not support lazy loading of room members yet. Try later.</string>
+    <string name="settings_lazy_loading_title">Lazy load groups members</string>
+    <string name="settings_lazy_loading_description">Increase performance by only loading group members on first view.</string>
+    <string name="error_lazy_loading_not_supported_by_home_server">Your homeserver does not support lazy loading of group members yet. Try later.</string>
 
     <!-- Other errors -->
     <string name="unknown_error">Sorry, an error occurred</string>
@@ -1290,7 +1290,7 @@ Why choose Riot.im?
     <string name="keys_backup_no_session_error">No Matrix session available</string>
 
     <string name="keys_backup_setup_step1_title">Never lose encrypted messages</string>
-    <string name="keys_backup_setup_step1_description">Messages in encrypted rooms are secured with end-to-end encryption. Only you and the recipient(s) have the keys to read these messages.\n\nSecurely back up your keys to avoid losing them.</string>
+    <string name="keys_backup_setup_step1_description">Messages in encrypted groups are secured with end-to-end encryption. Only you and the recipient(s) have the keys to read these messages.\n\nSecurely back up your keys to avoid losing them.</string>
     <string name="keys_backup_setup">Start using Key Backup</string>
     <string name="keys_backup_setup_step1_advanced">(Advanced)</string>
     <string name="keys_backup_setup_step1_manual_export">Manually export keys</string>
@@ -1480,7 +1480,7 @@ Why choose Riot.im?
     <string name="reply">Reply</string>
 
     <string name="global_retry">"Retry"</string>
-    <string name="room_list_empty">"Join a room to start using the app."</string>
+    <string name="room_list_empty">"Join a group to start using the app."</string>
     <string name="send_you_invite">"Sent you an invitation"</string>
     <string name="invited_by">Invited by %s</string>
 
@@ -1488,10 +1488,10 @@ Why choose Riot.im?
     <string name="room_list_catchup_empty_body">You have no more unread messages</string>
     <string name="room_list_catchup_welcome_title">Welcome home!</string>
     <string name="room_list_catchup_welcome_body">Catch up on unread messages here</string>
-    <string name="room_list_people_empty_title">Conversations</string>
+    <string name="room_list_people_empty_title">Chat</string>
     <string name="room_list_people_empty_body">Your direct message conversation will be displayed here</string>
-    <string name="room_list_rooms_empty_title">Rooms</string>
-    <string name="room_list_rooms_empty_body">Your rooms will be displayed here</string>
+    <string name="room_list_rooms_empty_title">Groups</string>
+    <string name="room_list_rooms_empty_body">Your groups will be displayed here</string>
 
     <string name="title_activity_emoji_reaction_picker">Reactions</string>
     <string name="reactions_agree">Agree</string>
@@ -1501,32 +1501,32 @@ Why choose Riot.im?
     <string name="reactions">Reactions</string>
 
     <string name="event_redacted_by_user_reason">Event deleted by user</string>
-    <string name="event_redacted_by_admin_reason">Event moderated by room admin</string>
+    <string name="event_redacted_by_admin_reason">Event moderated by group admin</string>
     <string name="last_edited_info_message">Last edited by %s on %s</string>
 
 
     <string name="malformed_message">Malformed event, cannot display</string>
-    <string name="create_new_room">Create New Room</string>
+    <string name="create_new_room">Create New Group</string>
     <string name="error_no_network">No network. Please check your Internet connection.</string>
     <string name="action_change">"Change"</string>
     <string name="change_room_directory_network">"Change network"</string>
     <string name="please_wait">"Please wait…"</string>
     <string name="group_all_communities">"All Communities"</string>
 
-    <string name="room_preview_no_preview">"This room can't be previewed"</string>
-    <string name="room_preview_world_readable_room_not_supported_yet">"The preview of world-readable room is not supported yet in RiotX"</string>
+    <string name="room_preview_no_preview">"This group can't be previewed"</string>
+    <string name="room_preview_world_readable_room_not_supported_yet">"The preview of world-readable group is not supported yet in RiotX"</string>
 
-    <string name="fab_menu_create_room">"Rooms"</string>
+    <string name="fab_menu_create_room">"Groups"</string>
     <string name="fab_menu_create_chat">"Direct Messages"</string>
 
     <!-- Create room screen -->
-    <string name="create_room_title">"New Room"</string>
+    <string name="create_room_title">"New Group"</string>
     <string name="create_room_action_create">"CREATE"</string>
-    <string name="create_room_name_hint">"Room name"</string>
+    <string name="create_room_name_hint">"Group name"</string>
     <string name="create_room_public_title">"Public"</string>
-    <string name="create_room_public_description">"Anyone will be able to join this room"</string>
-    <string name="create_room_directory_title">"Room Directory"</string>
-    <string name="create_room_directory_description">"Publish this room in the room directory"</string>
+    <string name="create_room_public_description">"Anyone will be able to join this group"</string>
+    <string name="create_room_directory_title">"Group Directory"</string>
+    <string name="create_room_directory_description">"Publish this group in the group directory"</string>
 
     <string name="keys_backup_unable_to_get_trust_info">"An error occurred getting trust info"</string>
     <string name="keys_backup_unable_to_get_keys_backup_data">"An error occurred getting keys backup data"</string>
@@ -1542,7 +1542,7 @@ Why choose Riot.im?
 
     <string name="settings_sdk_version">Matrix SDK Version</string>
     <string name="settings_other_third_party_notices">Other third party notices</string>
-    <string name="navigate_to_room_when_already_in_the_room">You are already viewing this room!</string>
+    <string name="navigate_to_room_when_already_in_the_room">You are already viewing this group!</string>
 
     <string name="quick_reactions">Quick Reactions</string>
 
@@ -1628,9 +1628,9 @@ Not all features in Riot are implemented in RiotX yet. Main missing (and coming 
     <!-- Room filtering -->
     <string name="room_filtering_filter_hint">Filter conversations…</string>
     <string name="room_filtering_footer_title">Can’t find what you’re looking for?</string>
-    <string name="room_filtering_footer_create_new_room">Create a new room</string>
+    <string name="room_filtering_footer_create_new_room">Create a new group</string>
     <string name="room_filtering_footer_create_new_direct_message">Send a new direct message</string>
-    <string name="room_filtering_footer_open_room_directory">View the room directory</string>
+    <string name="room_filtering_footer_open_room_directory">View the group directory</string>
 
     <string name="room_directory_search_hint">Name or ID (#example:matrix.org)</string>
 
@@ -1639,12 +1639,12 @@ Not all features in Riot are implemented in RiotX yet. Main missing (and coming 
     <string name="link_copied_to_clipboard">Link copied to clipboard</string>
 
     <string name="add_by_matrix_id">Add by matrix ID</string>
-    <string name="creating_direct_room">"Creating room…"</string>
+    <string name="creating_direct_room">"Creating group…"</string>
     <string name="direct_room_no_known_users">"No result found, use Add by matrix ID to search on server."</string>
     <string name="direct_room_start_search">"Start typing to get results"</string>
     <string name="direct_room_filter_hint">"Filter by username or ID…"</string>
 
-    <string name="joining_room">"Joining room…"</string>
+    <string name="joining_room">"Joining group…"</string>
 
     <string name="message_view_edit_history">View Edit History</string>
 

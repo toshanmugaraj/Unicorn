@@ -897,23 +897,23 @@ public class VectorParticipantsAdapter extends BaseExpandableListAdapter {
             }
             // display a search toggle for the local contacts
             matrixView.setVisibility(((groupPosition == mLocalContactsSectionPosition) && groupShouldBeExpanded) ? View.VISIBLE : View.GONE);
-
+            matrixView.setVisibility(View.GONE);
             // matrix user checkbox
-            CheckBox checkBox = convertView.findViewById(R.id.contacts_filter_checkbox);
-            checkBox.setChecked(PreferenceManager.getDefaultSharedPreferences(mContext).getBoolean(KEY_FILTER_MATRIX_USERS_ONLY, false));
-
-            checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    mShowMatrixUserOnly = isChecked;
-                    refresh(mFirstEntry, null);
-
-                    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(mContext);
-                    SharedPreferences.Editor editor = preferences.edit();
-                    editor.putBoolean(KEY_FILTER_MATRIX_USERS_ONLY, isChecked);
-                    editor.apply();
-                }
-            });
+//            CheckBox checkBox = convertView.findViewById(R.id.contacts_filter_checkbox);
+//            checkBox.setChecked(PreferenceManager.getDefaultSharedPreferences(mContext).getBoolean(KEY_FILTER_MATRIX_USERS_ONLY, false));
+//
+//            checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//                @Override
+//                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                    mShowMatrixUserOnly = isChecked;
+//                    refresh(mFirstEntry, null);
+//
+//                    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(mContext);
+//                    SharedPreferences.Editor editor = preferences.edit();
+//                    editor.putBoolean(KEY_FILTER_MATRIX_USERS_ONLY, isChecked);
+//                    editor.apply();
+//                }
+//            });
 
             // as there might be a clickable object in the extra layout,
             // it seems required to have a click listener

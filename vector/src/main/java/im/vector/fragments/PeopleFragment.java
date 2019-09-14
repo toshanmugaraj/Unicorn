@@ -129,7 +129,7 @@ public class PeopleFragment extends AbsHomeFragment implements ContactsManager.C
 
         mOnRoomChangedListener = this;
 
-        mMatrixUserOnlyCheckbox.setChecked(PreferenceManager.getDefaultSharedPreferences(getActivity()).getBoolean(MATRIX_USER_ONLY_PREF_KEY, false));
+//        mMatrixUserOnlyCheckbox.setChecked(PreferenceManager.getDefaultSharedPreferences(getActivity()).getBoolean(MATRIX_USER_ONLY_PREF_KEY, false));
 
         mAdapter.onFilterDone(mCurrentFilter);
 
@@ -511,9 +511,9 @@ public class PeopleFragment extends AbsHomeFragment implements ContactsManager.C
      * Init contacts views with data and update their display
      */
     private void initContactsViews() {
-        mAdapter.setLocalContacts(mMatrixUserOnlyCheckbox != null && mMatrixUserOnlyCheckbox.isChecked()
-                ? getMatrixUsers()
-                : mLocalContacts);
+//        mAdapter.setLocalContacts(mMatrixUserOnlyCheckbox != null && mMatrixUserOnlyCheckbox.isChecked()
+//                ? getMatrixUsers()
+//                : mLocalContacts);
     }
 
     /*

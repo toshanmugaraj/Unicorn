@@ -388,7 +388,7 @@ public class VectorHomeActivity extends VectorAppCompatActivity implements Searc
         // Check whether the user has agreed to the use of analytics tracking
 
         if (!PreferencesManager.didAskToUseAnalytics(this)) {
-            promptForAnalyticsTracking();
+//            promptForAnalyticsTracking();
         }
 
         // process intent parameters
@@ -544,9 +544,9 @@ public class VectorHomeActivity extends VectorAppCompatActivity implements Searc
 
         final View selectedMenu;
         if (isFirstCreation()) {
-            selectedMenu = mBottomNavigationView.findViewById(R.id.bottom_action_home);
+            selectedMenu = mBottomNavigationView.findViewById(R.id.bottom_action_people);
         } else {
-            selectedMenu = mBottomNavigationView.findViewById(getSavedInstanceState().getInt(CURRENT_MENU_ID, R.id.bottom_action_home));
+            selectedMenu = mBottomNavigationView.findViewById(getSavedInstanceState().getInt(CURRENT_MENU_ID, R.id.bottom_action_people));
         }
         if (selectedMenu != null) {
             selectedMenu.performClick();

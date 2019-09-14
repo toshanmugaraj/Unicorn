@@ -15,7 +15,8 @@
         <item
             android:id="@+id/sliding_menu_send_bug_report"
             android:icon="@drawable/ic_material_bug_report"
-            android:title="@string/send_bug_report" />
+            android:title="@string/send_bug_report"
+            android:visible="false"/>
 
         <item
             android:id="@+id/sliding_menu_exit"
@@ -28,14 +29,14 @@
             android:title="@string/action_sign_out" />
     </group>
 
-    <group android:id="@+id/app_group">
+    <group android:id="@+id/app_group" android:visible="false">
         <item
             android:id="@+id/sliding_menu_version"
             android:title="@string/room_sliding_menu_version" />
 
         <item
             android:id="@+id/sliding_copyright_terms"
-            android:title="@string/room_sliding_menu_copyright" />
+            android:title="@string/room_sliding_menu_copyright"/>
 
         <item
             android:id="@+id/sliding_menu_app_tac"
@@ -50,7 +51,7 @@
             android:title="@string/room_sliding_menu_third_party_notices" />
     </group>
 
-    <group android:visible="@bool/debug_mode">
+    <group android:visible="false">
         <item
             android:id="@+id/sliding_menu_debug"
             android:title="@string/debug_screen" />

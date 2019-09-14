@@ -70,10 +70,10 @@ public class VectorUnifiedSearchFragmentPagerAdapter extends FragmentPagerAdapte
         final boolean searchInRoom = !TextUtils.isEmpty(roomId);
 
         int pos = 0;
-        if (!searchInRoom) {
-            mFragmentsData.put(pos, new Pair<Integer, Fragment>(R.string.tab_title_search_rooms, null));
-            pos++;
-        }
+//        if (!searchInRoom) {
+//            mFragmentsData.put(pos, new Pair<Integer, Fragment>(R.string.tab_title_search_rooms, null));
+//            pos++;
+//        }
 
         mFragmentsData.put(pos, new Pair<Integer, Fragment>(R.string.tab_title_search_messages, null));
         pos++;

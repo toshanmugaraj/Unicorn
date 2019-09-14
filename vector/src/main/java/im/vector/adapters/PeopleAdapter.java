@@ -56,7 +56,7 @@ public class PeopleAdapter extends AbsAdapter {
     private static final int TYPE_CONTACT = 1;
 
     private final AdapterSection<Room> mDirectChatsSection;
-    private final AdapterSection<ParticipantAdapterItem> mLocalContactsSection;
+//    private final AdapterSection<ParticipantAdapterItem> mLocalContactsSection;
     private final KnownContactsAdapterSection mKnownContactsSection;
 
     private final OnSelectItemListener mListener;
@@ -91,15 +91,15 @@ public class PeopleAdapter extends AbsAdapter {
                 RoomUtils.getRoomsDateComparator(mSession, false));
         mDirectChatsSection.setEmptyViewPlaceholder(context.getString(R.string.no_conversation_placeholder), context.getString(R.string.no_result_placeholder));
 
-        mLocalContactsSection = new AdapterSection<>(context,
-                context.getString(R.string.local_address_book_header),
-                R.layout.adapter_local_contacts_sticky_header_subview,
-                R.layout.adapter_item_contact_view,
-                TYPE_HEADER_LOCAL_CONTACTS, TYPE_CONTACT,
-                new ArrayList<ParticipantAdapterItem>(),
-                ParticipantAdapterItem.alphaComparator);
-        mLocalContactsSection.setEmptyViewPlaceholder(!ContactsManager.getInstance().isContactBookAccessAllowed() ?
-                mNoContactAccessPlaceholder : mNoResultPlaceholder);
+//        mLocalContactsSection = new AdapterSection<>(context,
+//                context.getString(R.string.local_address_book_header),
+//                R.layout.adapter_local_contacts_sticky_header_subview,
+//                R.layout.adapter_item_contact_view,
+//                TYPE_HEADER_LOCAL_CONTACTS, TYPE_CONTACT,
+//                new ArrayList<ParticipantAdapterItem>(),
+//                ParticipantAdapterItem.alphaComparator);
+//        mLocalContactsSection.setEmptyViewPlaceholder(!ContactsManager.getInstance().isContactBookAccessAllowed() ?
+//                mNoContactAccessPlaceholder : mNoResultPlaceholder);
 
         mKnownContactsSection = new KnownContactsAdapterSection(context, context.getString(R.string.user_directory_header), -1,
                 R.layout.adapter_item_contact_view, TYPE_HEADER_DEFAULT, TYPE_CONTACT, new ArrayList<ParticipantAdapterItem>(), null);
@@ -107,7 +107,7 @@ public class PeopleAdapter extends AbsAdapter {
         mKnownContactsSection.setIsHiddenWhenNoFilter(true);
 
         addSection(mDirectChatsSection);
-        addSection(mLocalContactsSection);
+//        addSection(mLocalContactsSection);
         addSection(mKnownContactsSection);
     }
 
@@ -202,9 +202,9 @@ public class PeopleAdapter extends AbsAdapter {
 
     public void setLocalContacts(final List<ParticipantAdapterItem> localContacts) {
         // updates the placeholder according to the local contacts permissions
-        mLocalContactsSection.setEmptyViewPlaceholder(!ContactsManager.getInstance().isContactBookAccessAllowed() ?
-                mNoContactAccessPlaceholder : mNoResultPlaceholder);
-        mLocalContactsSection.setItems(localContacts, mCurrentFilterPattern);
+//        mLocalContactsSection.setEmptyViewPlaceholder(!ContactsManager.getInstance().isContactBookAccessAllowed() ?
+//                mNoContactAccessPlaceholder : mNoResultPlaceholder);
+//        mLocalContactsSection.setItems(localContacts, mCurrentFilterPattern);
         if (!TextUtils.isEmpty(mCurrentFilterPattern)) {
             filterLocalContacts(String.valueOf(mCurrentFilterPattern));
         }
@@ -264,22 +264,23 @@ public class PeopleAdapter extends AbsAdapter {
      * @return nb of items matching the filter
      */
     private int filterLocalContacts(final String pattern) {
-        if (!TextUtils.isEmpty(pattern)) {
-            List<ParticipantAdapterItem> filteredLocalContacts = new ArrayList<>();
-            final String formattedPattern = pattern.toLowerCase(VectorLocale.INSTANCE.getApplicationLocale()).trim();
-
-            List<ParticipantAdapterItem> sectionItems = new ArrayList<>(mLocalContactsSection.getItems());
-            for (final ParticipantAdapterItem item : sectionItems) {
-                if (item.startsWith(formattedPattern)) {
-                    filteredLocalContacts.add(item);
-                }
-            }
-            mLocalContactsSection.setFilteredItems(filteredLocalContacts, pattern);
-        } else {
-            mLocalContactsSection.resetFilter();
-        }
-
-        return mLocalContactsSection.getFilteredItems().size();
+            return 0;
+//        if (!TextUtils.isEmpty(pattern)) {
+//            List<ParticipantAdapterItem> filteredLocalContacts = new ArrayList<>();
+//            final String formattedPattern = pattern.toLowerCase(VectorLocale.INSTANCE.getApplicationLocale()).trim();
+//
+//            List<ParticipantAdapterItem> sectionItems = new ArrayList<>(mLocalContactsSection.getItems());
+//            for (final ParticipantAdapterItem item : sectionItems) {
+//                if (item.startsWith(formattedPattern)) {
+//                    filteredLocalContacts.add(item);
+//                }
+//            }
+//            mLocalContactsSection.setFilteredItems(filteredLocalContacts, pattern);
+//        } else {
+//            mLocalContactsSection.resetFilter();
+//        }
+//
+//        return mLocalContactsSection.getFilteredItems().size();
     }
 
     /**

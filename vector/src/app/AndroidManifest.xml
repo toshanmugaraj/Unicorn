@@ -6,7 +6,7 @@
         <!-- Firebase components -->
         <meta-data
             android:name="firebase_analytics_collection_deactivated"
-            android:value="true" />
+            android:value="false" />
 
         <service android:name="im.vector.push.fcm.VectorFirebaseMessagingService">
             <intent-filter>

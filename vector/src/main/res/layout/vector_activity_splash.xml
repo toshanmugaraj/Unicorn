@@ -6,14 +6,14 @@
 
     <ImageView
         android:id="@+id/animated_logo_image_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:background="@drawable/riot_animated_logo"
         android:contentDescription="@string/loading"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="@dimen/splash_image_width"
+        android:layout_height="@dimen/splash_image_height"/>
 
     <ProgressBar
         android:id="@+id/progress"
