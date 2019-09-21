@@ -1142,7 +1142,7 @@ public class VectorHomeActivity extends VectorAppCompatActivity implements Searc
         ));
 
         mFabJoinRoom.setIconDrawable(ThemeUtils.INSTANCE.tintDrawableWithColor(
-                ContextCompat.getDrawable(this, R.drawable.riot_tab_rooms),
+                ContextCompat.getDrawable(this, R.drawable.riot_tab_groups),
                 ContextCompat.getColor(this, android.R.color.white)
         ));
 

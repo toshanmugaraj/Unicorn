@@ -6,7 +6,7 @@
 
     <ImageView
         android:id="@+id/animated_logo_image_view"
-        android:background="@drawable/riot_animated_logo"
+        android:background="@drawable/riot_splash_3_red"
         android:contentDescription="@string/loading"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
