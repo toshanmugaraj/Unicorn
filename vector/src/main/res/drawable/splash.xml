@@ -8,9 +8,8 @@
     <item android:drawable="@color/riot_primary_background_color_light" />
 
     <!-- Centered logo -->
-    <item android:gravity="center"
-            android:drawable="@drawable/riot_splash_3_red"
-        android:width="@dimen/splash_image_width"
-        android:height="@dimen/splash_image_height"/>
-
+    <item>
+        <bitmap android:src="@drawable/riot_splash_3_red"
+            android:gravity="center" />
+    </item>
 </layer-list>
